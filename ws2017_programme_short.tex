@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Programme for the EuBIC winter School 2017
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pdfminorversion=4
+\documentclass[a5paper,11pt,oneside]{article}
+\usepackage[a5paper, top=1cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{changepage}
+\usepackage{emptypage}
+\usepackage{listingsutf8}
+\usepackage{graphicx}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage[small,bf,margin=1cm,singlelinecheck=true]{caption}
+\usepackage{layout}
+\usepackage{hyperref}
+\usepackage[ddmmyyyy,hhmmss]{datetime}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% set font family
+\usepackage{lmodern}
+\renewcommand*\rmdefault{lmss}
+
+\title{EuBIC Winter School 2017}
+\author{EuBIC Winter School Organizers}
+
+\begin{document}
+
+\definecolor{eubicRed}{HTML}{c00418}
+\definecolor{eubicGray}{HTML}{777777}
+
+\newcolumntype{L}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
+\newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+\newcolumntype{C}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}%
+
+\begin{center}
+  {\huge \color{eubicRed} \textbf{EuBIC Winter School 2017}}\\[0.5cm]
+  \raisebox{-.3\height}{\includegraphics[width=0.2\textwidth]{graphics/eubic_logo.png}}
+  \hspace*{0.5cm}
+  {\LARGE \textbf{Programme}}
+  \hspace*{0.5cm}
+  \raisebox{-.3\height}{\includegraphics[width=0.2\textwidth]{graphics/eupa-logo.png}}\\[0.2cm]
+  https://www.fh-ooe.at/eubic-ws17
+\end{center}
+\vspace*{\fill}
+
+\input{03_day1}
+For further information on the workshops, please see the electronic version of
+the programme or the winter school's webpage.
+
+\pagebreak
+\input{04_day2}
+
+\pagebreak
+\input{05_day3}
+
+\pagebreak
+\input{06_day4}
+\vspace*{\fill}
+\input{02_sponsors}
+
+\end{document}
