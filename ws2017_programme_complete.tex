@@ -3,8 +3,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \pdfminorversion=4
-\documentclass[a5paper,11pt,oneside]{article}
-\usepackage[a5paper, top=1cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper, top=1cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{changepage}
@@ -18,6 +18,7 @@
 \usepackage[ddmmyyyy,hhmmss]{datetime}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{array}
 
 % set font family
 \usepackage{lmodern}
@@ -31,12 +32,21 @@
 \definecolor{eubicRed}{HTML}{c00418}
 \definecolor{eubicGray}{HTML}{777777}
 
-\newcolumntype{L}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
-\newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
-\newcolumntype{C}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}%
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+
+\newcommand{\mysection}[2]{
+  \setcounter{section}{#1}
+  \section*{#2}
+  \addcontentsline{toc}{section}{#2}
+}
 
 \input{01_titlepage}
+
+\pagebreak
+\tableofcontents
 
 \pagebreak
 \input{03_day1}
@@ -49,13 +59,20 @@
 
 \pagebreak
 \input{06_day4}
-\vspace*{\fill}
+
+\pagebreak
 \input{02_sponsors}
+
+\pagebreak
+\input{10_talks}
 
 \pagebreak
 \input{07_workshops}
 
-%\pagebreak
-%\input{08_posters}
+\pagebreak
+\input{09_flashtalks}
+
+\pagebreak
+\input{08_posters}
 
 \end{document}
