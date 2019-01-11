@@ -1,0 +1,180 @@
+\mysection{6}{Talk Abstracts}
+
+\noindent\textbf{Day 2 -- 16. January 2019}
+\addcontentsline{toc}{subsection}{Day 2}
+
+\subsubsection*{\color{eubicRed} XCorDIA: a new database search engine to detect genetic variants from DIA data}
+{\color{eubicGray}Brian Searle}
+
+Single nucleotide polymorphisms and other genomic sequence variants can have
+profound impact on susceptibility to disease. Even still, most shotgun
+proteomics workflows focus on detecting canonical protein sequences found in
+FASTA databases. While proteogenomics methods that combine customized exome
+sequencing with mass spectrometry are emerging for data dependent acquisition
+(DDA), data independent acquisition (DIA) approaches frequently rely on curated
+spectrum libraries that lack sequence variants. Moreover, because most variants
+result in small retention time and M/Z shifts, these peptides often co-isolate
+and fragment together in wide DIA precursor isolation windows. Variant peptides
+produce many of the same fragment ions as canonical peptides and confidently
+distinguishing different forms is challenging. Moreover, peptide-centric search
+engines can produce undetectable false positives using these shared ions when
+searching for low mass PTMs or sequence variants caused by either SNPs,
+paralogs, or orthologs. We present XCorDIA, a new database search engine that
+detects and statistically validates PTMS and peptide variants in PEFF databases
+from DIA data. XCorDIA searches for PTMs and sequence variants by batching
+peptides that share fragment ions and confirming the presence of specific
+variants using a PTM/variant detection algorithm similar to PTM
+site-localization algorithms. We validate XCorDIA using methionine oxidized
+peptides. Oxidation shifts precursor mass by only +16 Da, which produces mass
+shifts similar to most SNPs (e.g. +14 Da, V  L). Without variant-specific
+scoring, we find that based on shared fragment ions approximately 1/3rd of
+oxidized peptides are incorrectly detected at the retention time corresponding
+to the unmodified form. Finally, we demonstrate how XCorDIA detects sequence
+variants from ClinVar using clinical amyloidosis samples.
+
+\subsubsection*{\color{eubicRed} Label-free Quantification of Complex Proteomes using Ion-Mobility-based DIA }
+{\color{eubicGray}Stefan Tenzer}
+
+Mass spectrometry-based proteomics greatly benefited from recent improvements in instrument performance and the development of bioinformatics solutions facilitating the high-throughput quantification of proteins in complex biological samples.
+
+Unbiased data-independent acquisition (DIA) strategies have gained increased popularity in the field of quantitative proteomics in the last years, as they provide a complete record of all detectable analytes and facilitates precise label-free quantification of highly complex samples.
+
+The integration of ion mobility separation (IMS) into DIA workflows provides an additional dimension of separation to liquid chromatography-mass spectrometry (LC-MS), and increases the achievable analytical depth of DIA approaches.
+
+From a computational aspect, the increased data complexity provides several opportunities for novel data processing approaches, but is also challenging, as multidimensional solutions for peak picking, alignment and visualization have to be implemented.
+
+\subsubsection*{\color{eubicRed} Bioinformatics for Proteomics - any open questions?}
+{\color{eubicGray}Martin Eisenacher}
+
+Proteomics, especially with mass spectrometry has reached many milestones.
+Several challenges postulated as being show stoppers have been addressed:
+identification with limited false positives, quantification, finding "all"
+gene-coded proteins, modifications (plus localization), usable standard
+formats. In parallel, instruments and algorithms became more sensitive, more
+exact and data more sustainable. But there are still some unexplained
+phenomenons, all-day questions to solve, closed doors to open. For example, the
+increasing mass accuracy creates new challenges to false-discovery rate
+estimation. Or, shared peptides could be used for a better quantification. To
+open the box of pandora - all our method development in mass spectrometry for
+Proteomics may become obsolete some day.
+
+
+\vspace{1cm}
+\noindent\textbf{Day 3 -- 17. January 2019}
+\addcontentsline{toc}{subsection}{Day 3}
+
+\subsubsection*{\color{eubicRed} STRING -- Large-scale integration of data and text}
+{\color{eubicGray}Lars Juhl Jensen}
+
+Methodological advances have in recent years given us unprecedented information
+on the molecular details of living cells. However, it remains a challenge to
+collect all the available data on individual genes and to integrate the highly
+heterogeneous evidence available with what is described in the scientific
+literature. The STRING database aims to address this by consolidating known and
+predicted protein–protein association data for a large number of organisms. In
+my presentation, I will give an overview of the STRING database and describe
+the general approach we use to unify heterogeneous data, provide comparable
+quality scores for all evidence types, and automatically mine associations from
+the biomedical literature.
+
+\subsubsection*{\color{eubicRed} Prosit: Proteome-wide prediction of peptide tandem mass spectra by deep learning}
+{\color{eubicGray}Mathias Wilhelm}
+
+In mass spectrometry-based proteomics, the identification and quantification of
+peptides heavily relies on sequence database searching. However, the lack of
+accurate predictive models for fragment ion intensities impairs the realization
+of the full potential of this approach. Via ProteomicsDB, reference spectra
+from the ProteomeTools project and predictions from Prosit are now available,
+allowing their integration into various proteomic workflows. This talk will
+showcase some of the many applications in DDA, DIA and PRM workflows.
+
+\subsubsection*{\color{eubicRed} Using phosphoproteomics data to study context-specific signalling}
+{\color{eubicGray}Evangelia Petsalaki}
+
+Phosphoproteomics data provide a snapshot of the phosphorylation-based
+signaling state of cells.  They can therefore be used to dissect the dynamic
+networks active in a cell in a given condition. Several methods infer
+context-specific signalling networks from phosphoproteomics data by using as
+informative priors either existing protein-protein interaction networks or
+networks from pathway databases. These suffer from severe study bias and
+therefore data-driven analyses could provide more scope for novel discoveries
+and an improved understanding of context-specific cell signalling.
+
+To allow non-bioinformaticians to perform data-driven analyses on
+phospho-proteomics datasets I developed SELPHI, which performs automated data
+integration and correlation-based network inference. We applied SELPHI to
+phospho-proteomics data from B cells in variable inhibitor and stimulation
+conditions, and we identified a novel substrate recognition motif for the Fes
+kinase. Our follow-up study showed that the motif is recognized by the CSK
+kinase, and led to explaining the dual oncogenic and tumor suppressive function
+of Fes.
+
+Currently, we have taken advantage of published phosphoproteomics datasets to
+generate a data-driven kinase signalling network that can be used as an
+informative prior for network inference.  I will also present preliminary
+results on a new method that uses phosphoproteomics data to derive
+context-specific cell signaling networks.
+
+\subsubsection*{\color{eubicRed} Insights into the multi-functioning proteome}
+{\color{eubicGray}Kathryn Lilley}
+
+It is well accepted paradox in biology genome size does not correlate with
+organismal complexity. In terms of proteins, it could be argued that in higher
+organisms the proteome is simply too small for the complex functions that it is
+has to perform [Doolittle, W. F. (2013) Proc. Natl Acad. Sci. USA 110, 5294–5300].
+
+The chemical space that the proteome occupies in higher organisms is vastly
+expanded by post translational modification, but the numbers and roles of
+differently functioning proteoforms in a cell are currently uncertain.
+
+In this talk I will review methods that shed light on different functional
+roles of proteins, from establishing multiple subcellular locations of
+proteins, to determining additional nucleic acid binding properties of
+metabolic enzymes. I will also discuss difficulties in trying to determine
+alternative functional roles for proteins.
+
+
+\vspace{1cm}
+\noindent\textbf{Day 4 -- 18. January 2019}
+\addcontentsline{toc}{subsection}{Day 4}
+
+\subsubsection*{\color{eubicRed} Ionbot: a novel, fully data-driven search engine for open modification and mutation searches}
+{\color{eubicGray}Sven Degroeve}
+
+Modern shotgun proteomics is entirely dependent on accurate search engine tools
+to match observed spectra to the peptide sequences that generated them. Here we
+focus on the widely applied approach that is based on a target database that
+contains all proteins (peptides) expected to be in the sample under
+consideration. To accommodate for the high computational cost of matching tens
+of thousands of MS/MS spectra, peptides in the target database are typically
+considered to be modified by a few of the most common modifications only.
+
+We present Ionbot, a completely new and highly powerful search engine that
+allows for matching MS/MS spectra against extremely large target databases
+(allowing thousands of potential protein modifications including mutations). It
+achieves high processing speeds by implementing a new data-driven approach for
+selecting candidate peptides for a given MS/MS spectrum. Further, a novel PSM
+scoring function based on predicted MS/MS spectra is presented as a means to
+maintain a high degree of sensitivity (at fixed FDR) when handling very large
+target databases. Ionbot will be demonstrated to perform very well in open
+modification and mutation searches.
+
+\subsubsection*{\color{eubicRed} Trapped ion mobility spectrometry: a new dimension for mass spectrometry-based proteomics}
+{\color{eubicGray}Florian Meier}
+
+The fast scan speed of time-of-flight analyzers allows adding ion mobility
+spectrometry as a third dimension of separation. Trapped ion mobility
+spectrometry (TIMS) is particularly attractive due to its compact design and
+highly efficient ion utilization. We have recently introduced a novel scan mode
+termed parallel accumulation – serial fragmentation (PASEF), which synchronizes
+the release of peptide ions from the TIMS device with the precursor selection
+in the quadrupole (PMID: 26538118). In data-dependent acquisition, PASEF
+increases the sequencing by more than 10-fold without any loss in sensitivity
+(PMID: 30385480). Transferring the PASEF principle to data-independent
+acquisition could, in principle, capture a much larger proportion of the
+available ion current as compared with classical DIA, thereby improving
+sensitivity and acquisition speed several fold. We further demonstrate that
+peptide collisional cross sections can be readily measured at the scale of
+100,000s with high precision. We conclude that TIMS in combination with PASEF
+is an exciting addition to the technological toolbox in proteomics, with many
+unique operating modes and applications still left to be explored.

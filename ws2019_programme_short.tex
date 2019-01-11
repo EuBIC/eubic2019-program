@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Programme for the EuBIC winter School 2017
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pdfminorversion=4
+\documentclass[a5paper,10pt,oneside]{article}
+\usepackage[a5paper, top=1cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{changepage}
+\usepackage{emptypage}
+\usepackage{listingsutf8}
+\usepackage{graphicx}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage[small,bf,margin=1cm,singlelinecheck=true]{caption}
+\usepackage{layout}
+\usepackage{hyperref}
+\usepackage[ddmmyyyy,hhmmss]{datetime}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% set font family
+\usepackage{lmodern}
+\renewcommand*\rmdefault{lmss}
+
+\title{EuBIC Winter School 2017}
+\author{EuBIC Winter School Organizers}
+
+\begin{document}
+
+\definecolor{eubicRed}{HTML}{c00418}
+\definecolor{eubicGray}{HTML}{777777}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\newcommand{\mysection}[2]{
+  \setcounter{section}{#1}
+  \section*{#2}
+  \addcontentsline{toc}{section}{#2}
+}
+
+\begin{center}
+  \includegraphics[width=\textwidth]{graphics/ski-jumping-wallpapers-small.jpg}\\
+  \vspace*{\fill}
+  {\huge \color{eubicRed} \textbf{EuBIC Winter School 2019}}\\[1.0cm]
+  {\color{eubicGray} 15th -- 18th January 2019, Hotel Mercure Kasprowy, Zakopane, Poland}\\[1.0cm]
+  \raisebox{-.3\height}{\includegraphics[width=0.2\textwidth]{graphics/eubic_logo.png}}
+  \hspace*{0.2cm}
+  {\LARGE \textbf{Programme}}
+  \hspace*{0.2cm}
+  \raisebox{-.3\height}{\includegraphics[width=0.2\textwidth]{graphics/eupa-logo.png}}\\[1.5cm]
+  \href{https://www.proteomics-academy.org/eubic-winter-school-2019}{https://www.proteomics-academy.org/eubic-winter-school-2019}
+\end{center}
+\vspace*{\fill}
+
+\pagebreak
+\input{02_day1}
+\noindent For further information on the workshops, please see the electronic version of the programme or the winter school's webpage.
+
+\pagebreak
+\input{03_day2}
+
+\pagebreak
+\input{04_day3}
+
+\pagebreak
+\input{05_day4}
+
+\pagebreak
+\mysection{5}{Sponsors}
+\textbf{Main sponsors:}
+\begin{center}
+  \includegraphics[height=1.5cm]{graphics/eupa-logo}\hspace*{2cm}
+  \includegraphics[height=1.5cm]{graphics/ELS_Logo_Orange_RGB}
+\end{center}
+\vspace*{.5cm}
+\noindent\textbf{Platinum sponsors:}
+\begin{center}
+  \includegraphics[height=2cm]{graphics/Bioinformatics_Solutions_Inc__svg}
+\end{center}
+\vspace*{.5cm}
+\noindent\textbf{Gold sponsors:}
+\begin{center}
+  \includegraphics[height=1.5cm]{graphics/logo_ProFi}\hspace*{0.5cm}
+  \includegraphics[height=1.5cm]{graphics/thermo-logo}\hspace*{0.5cm}
+  \includegraphics[height=1.5cm]{graphics/sva_logo}
+\end{center}
+\vspace*{.5cm}
+\noindent\textbf{General sponsor:}
+\begin{center}
+  \includegraphics[height=1.5cm]{graphics/Molecular-Omics_logo}
+\end{center}
+\vspace*{.5cm}
+\noindent\textbf{Associations supporting with grants:}
+\begin{center}
+  \includegraphics[height=1.5cm]{graphics/logo_sfeap}\hspace*{1cm}
+  \includegraphics[height=1.5cm]{graphics/BePA_Logo}\hspace*{1cm}
+  \includegraphics[height=1.5cm]{graphics/apma_red-white_box_logo_1k}\hspace*{1cm}
+  \includegraphics[height=1.5cm]{graphics/LOGO_GANADOR_SEPROT_2016}
+\end{center}
+
+\end{document}
